@@ -310,19 +310,13 @@ main {
   
   .paint-card,
   .dummy {
-    width: 45%;
+    width: 300px;
+    /*width: 45%;
     min-width: 200px;
-    max-width: 350px;
+    max-width: 350px;*/
   }   
   .dummy {
     height: 0.1px;
     margin: 5px;
-  }
-}
-
-@media screen and (min-width: 930px) {
-  .paint-card,
-  .dummy {
-    max-width: 300px;
   }
 }
