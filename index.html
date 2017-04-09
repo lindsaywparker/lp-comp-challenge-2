@@ -2,36 +2,179 @@
 <html>
   <head>
     <title>Lindsay's Static Comp 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='styles.css' type='text/css' rel='stylesheet'/>
-  </head>
+<link href="https://fonts.googleapis.com/css?family=Proza+Libre:400,800" rel="stylesheet">  </head>
   <body>
-    <header>
-      <div id='user'>Admin Username</div>
-      <nav id='nav'>
-        <a href='#'>SHARES</a>
-        <a href='#'>PLAYLISTS</a>
-        <a href='#'>PERSONAL VIDEOS</a>
-      </nav>
-      <h1>2Win!
-        <div id='logo'>logo</div>
-      </h1>
+    <header id='header-container'>
+      <div id='full-nav'>
+        <a id='masterpieces' href='#'>MASTERPIECES</a>
+        <a id='artists' href='#'>ARTISTS</a>
+        <a id='learn' href='#'>LEARN</a>
+      </div>
+      <div id='logo-user'>
+        <div id='profile'>
+          <a href='#' id='user'>William Rubin</a>
+        </div>
+        <h1 id='title'>Art!</h1>
+        <nav id='mobile-nav'></nav>
+      </div>
     </header>
     <main>
-      <h2>Shares</h2>
-      <section id='card-container'>
-        <article class='card'>
-          <div class='card-header'>
-            VIEWS 02
+      <h2>Masterpieces</h2>
+      <section class='paint-container'>
+        <article class='paint-card'>
+          <div class='paint-header' id='card1'>
+            <div class='share'></div>
+            <div class='view-count'>
+              <h6 class='views'>VIEWS</h6>
+              <div class='count'>02</div>
+            </div>
           </div>
-          <div class='card-content'>
-            <h5>Recipient's Namehere</h5>
+          <div class='paint-content'>
+            <h5>The Bedroom</h5>
             <div class='timestamp'>Monday 01/23/16 10:22am</div>
-            <a href='#'>http://2win.2winstage.com/p/recipients_namehere</a>
-            <h6>PLAYLIST</h6>
-            <p>Name of Playlist</p>
-            <h6>ATTACHEMENTS</h6>
-            <p>04</p>
+            <a class='link' href='https://www.vangoghmuseum.nl/en/collection/s0047V1962'>https://www.vangoghmuseum.nl/en/collection/s0047V1962</a>
+            <h6>ARTIST</h6>
+            <p>Vincent Van Gogh</p>
+            <h6>CREATED</h6>
+            <p class='att-count'>1888</p>
+          </div>
         </article>
+        <article class='paint-card'>
+          <div class='paint-header' id='card2'>
+            <div class='share'></div>
+            <div class='view-count'>
+              <h6 class='views'>VIEWS</h6>
+              <div class='count'>02</div>
+            </div>
+          </div>
+          <div class='paint-content'>
+            <h5>Girl with a Pearl Earring</h5>
+            <div class='timestamp'>Monday 01/23/16 10:22am</div>
+            <a class='link' href='https://www.mauritshuis.nl/en/discover/mauritshuis/masterpieces-from-the-mauritshuis/girl-with-a-pearl-earring-670/'>https://www.mauritshuis.nl/en/discover/mauritshuis/masterpieces-from-the-mauritshuis/girl-with-a-pearl-earring-670/</a>
+            <h6>ARTIST</h6>
+            <p>Johannes Vermeer</p>
+            <h6>CREATED</h6>
+            <p class='att-count'>1656</p>
+          </div>
+        </article>
+        <article class='paint-card'>
+          <div class='paint-header' id='card3'>
+            <div class='share'></div>
+            <div class='view-count'>
+              <h6 class='views'>VIEWS</h6>
+              <div class='count'>02</div>
+            </div>
+          </div>
+          <div class='paint-content'>
+            <h5>Guernica</h5>
+            <div class='timestamp'>Monday 01/23/16 10:22am</div>
+            <a class='link' href='http://www.pablopicasso.org/guernica.jsp'>http://www.pablopicasso.org/guernica.jsp</a>
+            <h6>ARTIST</h6>
+            <p>Pablo Picasso</p>
+            <h6>CREATED</h6>
+            <p class='att-count'>1937</p>
+          </div>
+        </article>
+        <article class='paint-card'>
+          <div class='paint-header' id='card4'>
+            <div class='share'></div>
+            <div class='view-count'>
+              <h6 class='views'>VIEWS</h6>
+              <div class='count'>02</div>
+            </div>
+          </div>
+          <div class='paint-content'>
+            <h5>The Kiss</h5>
+            <div class='timestamp'>Monday 01/23/16 10:22am</div>
+            <a class='link' href='https://www.belvedere.at/gustav-klimt'>https://www.belvedere.at/gustav-klimt</a>
+            <h6>ARTIST</h6>
+            <p>Gustav Klimt</p>
+            <h6>CREATED</h6>
+            <p class='att-count'>1908</p>
+          </div>
+        </article>
+        <article class='paint-card'>
+          <div class='paint-header' id='card5'>
+            <div class='share'></div>
+            <div class='view-count'>
+              <h6 class='views'>VIEWS</h6>
+              <div class='count'>02</div>
+            </div>
+          </div>
+          <div class='paint-content'>
+            <h5>The Scream</h5>
+            <div class='timestamp'>Monday 01/23/16 10:22am</div>
+            <a class='link' href='http://nasjonalmuseet.no/en/collections_and_research/our_collections/edvard_munch_in_the_national_museum/The+Scream%2C+1893.b7C_wljU1a.ips'>http://nasjonalmuseet.no/en/collections_and_research/our_collections/edvard_munch_in_the_national_museum/The+Scream%2C+1893.b7C_wljU1a.ips</a>
+            <h6>ARTIST</h6>
+            <p>Edvard Munch</p>
+            <h6>CREATED</h6>
+            <p class='att-count'>1893</p>
+          </div>
+        </article>
+        <article class='paint-card'>
+          <div class='paint-header' id='card6'>
+            <div class='share'></div>
+            <div class='view-count'>
+              <h6 class='views'>VIEWS</h6>
+              <div class='count'>02</div>
+            </div>
+          </div>
+          <div class='paint-content'>
+            <h5>Starry Night</h5>
+            <div class='timestamp'>Monday 01/23/16 10:22am</div>
+            <a class='link' href='https://www.moma.org/collection/works/79802'>https://www.moma.org/collection/works/79802</a>
+            <h6>ARTIST</h6>
+            <p>Vincent Van Gogh</p>
+            <h6>CREATED</h6>
+            <p class='att-count'>1889</p>
+          </div>
+        </article>
+        <article class='paint-card'>
+          <div class='paint-header' id='card7'>
+            <div class='share'></div>
+            <div class='view-count'>
+              <h6 class='views'>VIEWS</h6>
+              <div class='count'>02</div>
+            </div>
+          </div>
+          <div class='paint-content'>
+            <h5>The Creation of Adam</h5>
+            <div class='timestamp'>Monday 01/23/16 10:22am</div>
+            <a class='link' href='http://www.michelangelo.org/the-creation-of-adam.jsp'>http://www.michelangelo.org/the-creation-of-adam.jsp</a>
+            <h6>ARTIST</h6>
+            <p>Michelangelo</p>
+            <h6>CREATED</h6>
+            <p class='att-count'>1512</p>
+          </div>
+        </article>
+        <article class='paint-card'>
+          <div class='paint-header' id='card8'>
+            <div class='share'></div>
+            <div class='view-count'>
+              <h6 class='views'>VIEWS</h6>
+              <div class='count'>02</div>
+            </div>
+          </div>
+          <div class='paint-content'>
+            <h5>Water Lilies</h5>
+            <div class='timestamp'>Monday 01/23/16 10:22am</div>
+            <a class='link' href='http://www.metmuseum.org/art/collection/search/438008'>http://www.metmuseum.org/art/collection/search/438008</a>
+            <h6>ARTIST</h6>
+            <p>Claude Monet</p>
+            <h6>CREATED</h6>
+            <p class='att-count'>1919</p>
+          </div>
+        </article>
+        <div class='dummy'></div>
+        <div class='dummy'></div>
+        <div class='dummy'></div>
+        <div class='dummy'></div>
+        <div class='dummy'></div>
+        <div class='dummy'></div>
+        <div class='dummy'></div>
+        <div class='dummy'></div>
       </section>
     </main>
   </body>

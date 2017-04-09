@@ -1,0 +1,328 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 1800px;
+}
+
+body {
+  margin: 0;
+  color: #313732;
+  font-family: 'Proza Libre', Arial, sans-serif;
+}
+
+/* ----- COLORS, HEADINGS ----- */
+
+header         {background-color: #313732;}
+html           {background-color: #DEDEDE;}
+#user          {color: #F26101;}
+#title         {color: #FFF;}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  margin: 15px 0 10px 0;
+  font-size: 1.618em;
+}
+
+h5 {
+  margin: 0;
+  font-size: 1.194em;
+}
+
+h6 {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+p {
+  margin-top: 3px;
+}
+
+.timestamp {
+  color: #8AA8B0;
+  font-size: 0.8em;
+}
+
+/* ----- HEADER ----- */
+header {
+  padding: 8px;
+}
+
+#header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#full-nav,
+#user {
+  display: none;
+}
+
+#logo-user {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#mobile-nav {
+  width: 30px;
+  height: 30px;
+  background: url('images/mobile-nav.svg') left/30px no-repeat;
+}
+
+#mobile-nav:hover {
+  background-image: url('images/mobile-nav-hover.svg');
+}
+
+#title {
+  padding-right: 35px;
+  margin: 0;
+  background: url('images/logo.svg') right 50%/30px no-repeat;
+}
+
+#profile {
+  width: 30px;
+  height: 30px;
+  background: url('images/profile-icon.svg') center 50%/contain no-repeat;
+}
+
+#profile:hover {
+  background-image: url('images/profile-icon-hover.svg');
+}
+
+
+/* ----- MAIN ----- */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paint-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.paint-card {
+  width: 95%;
+  max-width: 400px;
+  max-height: 430px;
+  margin: 5px;
+  background-color: #FFF;
+  box-shadow: 3px 3px 5px #888888;
+}
+
+.paint-header {
+  display: flex;
+  height: 150px;
+  padding: 12px;
+  color: #FFF;
+  justify-content: space-between;
+}
+
+.share {
+  width: 50px;
+  height: 50px;
+  background: url('images/share.svg') center/cover no-repeat;
+}
+
+.share:hover {
+  background-image: url('images/share-hover.svg');
+}
+
+.views {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.count {
+  font-size: 2.2em;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.paint-content {
+  padding: 15px;
+}
+
+.link {
+  display: block;
+  width: 99%;
+  height: 44px;
+  padding: 8px 5px;
+  margin: 20px auto;
+  background-color: #DEDEDE;
+  color: #313732;
+  text-decoration: none;
+  font-size: 0.8em;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.att-count {
+  color: #F26101;
+  margin: 0;
+  font-size: 2em;
+}
+
+#card1 {
+  background: url('images/bedroom.jpg') center/cover no-repeat;
+}
+
+#card2 {
+  background: url('images/girl.jpg') center/cover no-repeat;
+}
+
+#card3 {
+  background: url('images/guernica.jpg') center/cover no-repeat;
+}
+
+#card4 {
+  background: url('images/kiss.jpg') center/cover no-repeat;
+}
+
+#card5 {
+  background: url('images/scream.jpg') center/cover no-repeat;
+}
+
+#card6 {
+  background: url('images/starry.jpg') center/cover no-repeat;
+}
+
+#card7 {
+  background: url('images/vatican.jpg') center/cover no-repeat;
+}
+
+#card8 {
+  background: url('images/waterlilies.jpg') center/cover no-repeat;
+}
+
+@media screen and (min-width: 660px) {
+  
+  h1 {
+    font-size: 3.125em;
+  }
+  
+  h2 {
+    margin: 30px 0 20px 20px;
+    font-size: 2.618em;
+  }
+  
+  #header-container {
+    height: 160px;
+    padding: 10px 20px 20px 20px;
+    align-items: flex-end;
+  }
+  
+  #mobile-nav {
+    display: none;
+  }
+  
+  #full-nav,
+  #user {
+    display: inline;
+    margin-bottom: 20px;
+  }
+  
+  #logo-user {
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    align-items: flex-end;
+  }
+  
+  #profile {
+    width: 162px;
+    background-position: left;
+  }
+  
+  #profile:hover {
+    background-image: url('images/profile-icon.svg');
+  }
+  
+  #user {
+    display: block;
+    margin: 5px 0 5px 35px;
+    background: url('images/down.svg') right/15px no-repeat;
+    text-decoration: none;
+  }
+  
+  #user:hover {
+    color: #FFF;
+  }
+  
+  #full-nav a {
+    margin-right: 30px;
+    text-decoration: none;
+  }
+  
+  #masterpieces {
+    padding: 5px 0 0 35px;
+    background: url('images/masterpieces-active.svg') left/contain no-repeat;
+    color: #FFF;
+  }
+  
+  #artists,
+  #learn {
+    padding: 5px 0 0 30px;
+    color: #DEDEDE;
+  }
+  
+  #artists {
+    background: url('images/artists.svg') left/contain no-repeat;
+  }
+  
+  #artists:hover {
+    background-image: url('images/artists-hover.svg');
+    color: #FFF;
+  }
+  
+  #learn {
+    background: url('images/learn.svg') left/contain no-repeat;
+  }
+  
+  #learn:hover {
+    background-image: url('images/learn-hover.svg');
+    color: #FFF;
+  }
+  
+  main {
+    align-items: flex-start;
+  }
+  
+  .paint-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .paint-card,
+  .dummy {
+    width: 45%;
+    min-width: 200px;
+    max-width: 350px;
+  }   
+  .dummy {
+    height: 0.1px;
+    margin: 5px;
+  }
+}
+
+@media screen and (min-width: 930px) {
+  .paint-card,
+  .dummy {
+    max-width: 300px;
+  }
+}
